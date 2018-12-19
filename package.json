@@ -1,0 +1,33 @@
+{
+  "name": "go-big-texas",
+  "version": "1.0.0",
+  "description": "Go Big in Texas App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "html-includes --src src --dest public && webpack --config webpack.config.js",
+    "start": "npm run build && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "express": "^4.16.4",
+    "html-includes": "^4.0.0",
+    "popmotion": "^8.5.3",
+    "useragent": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-watch-server": "^1.2.1"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
