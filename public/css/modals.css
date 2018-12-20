@@ -10,13 +10,14 @@ button {
 
 /* modal classes */
 .modal-cancel {
-  background-color: blueviolet;
-  color: var(--pink);
+  color: #B0AEBA;
+  transition: color .2s 
+  
+}
+.modal-cancel:hover {
+  color:white;
 }
 
-.modal-ok {
-  background-color: var(--green);
-}
 
 .modal-shade {
   display: none;
@@ -49,9 +50,6 @@ button {
   color: black;
 
   /* background: none; */
-  border-radius: 5px;
-  padding: 30px 45px;
-  width: 4px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -108,13 +106,69 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
 }
+/***** top left ********/
 #top-left-modal {
   background-color: white;
-  height: 512px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  padding: 41px 48px 0 38px;
+  border-radius: 20px;
+  width: 373px;
+  height: auto;
 }
+
+#top-left-modal .modal-cancel {
+    top: 25px;
+    left: 900px;
+    position: absolute;
+}
+
+#top-left-modal table {
+  width: 100% !important; 
+  height:auto; 
+  margin-top: -7%;
+}
+#top-left-modal h1 {
+  text-transform: uppercase;
+  color:#d9242e; 
+  font-size: 20px; 
+  font-weight: bold;
+  width: 100% !important; 
+}
+
+#top-left-modal h2 {
+  color: black; 
+  text-transform: uppercase; 
+  font-size: 16px;
+  width: 100% !important; 
+}
+
+#top-left-modal h3 {
+ text-transform: uppercase; 
+ font-size: 14px;
+ width: 100% !important; 
+}
+
+#top-left-modal span {
+  font-weight: bold; 
+  color:#d9242e;
+  width: 100% !important; 
+}
+
+#top-left-modal hr {
+  width: 100% !important; 
+  border-top: dotted 17px; 
+  margin-top: 0;
+}
+
+#top-left-modal-image {
+  width:100%; 
+  height:auto;
+}
+#red-stars {
+  width:100%; 
+  height:auto;
+}
+/**************************/
 #center-modal {
   background-color: white;
   height: 512px;

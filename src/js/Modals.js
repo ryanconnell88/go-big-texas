@@ -82,7 +82,7 @@ export default class Modals {
           track,
           duration: 700,
           from: { x: -110, y: -140, width: 0, height: 10 },
-          to: { x: 0, y: 0, width: 200, height: 500 },
+          to: { x: 0, y: 0, width:  373, height: 500 },
           ease: {
             x: easing.easeIn,
             y: easing.easeIn,
@@ -156,8 +156,8 @@ export default class Modals {
   textTween(track) {
     return {
       track,
-      duration: 600,
-      from: { fontSize: 0 },
+      duration: 700,
+      from: { fontSize: 3 },
       to: { fontSize: 12 },
       ease: {
         x: easing.easeIn,
