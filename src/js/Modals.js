@@ -81,7 +81,7 @@ export default class Modals {
         return {
           track,
           duration: 700,
-          from: { x: -110, y: -140, width: 0, height: 10 },
+          from: { x: -110, y: -140, width: 0, height: 10},
           to: { x: 0, y: 0, width:  373, height: 500 },
           ease: {
             x: easing.easeIn,
@@ -157,8 +157,9 @@ export default class Modals {
     return {
       track,
       duration: 700,
-      from: { fontSize: 3 },
-      to: { fontSize: 12 },
+      from: { x: 0, y: 0 },
+      to: { x: 0, y: 0 },
+      
       ease: {
         x: easing.easeIn,
         y: easing.easeIn,
@@ -170,10 +171,13 @@ export default class Modals {
 
   //method for splitting content of modal into sections that can be animated by textTween
   setStylers(v) {
-    if (v.shade !== undefined) this.modalShade.set('opacity', v.shade);
-    if (v.modal !== undefined) this.modal.set(v.modal);
+    // if (v.shade !== undefined) 
+    this.modalShade.set('opacity', v.shade);
+    // if (v.modal !== undefined) 
+    this.modal.set(v.modal);
     this.sectionLabels.forEach((label, i) => {
-      if (v[label] !== undefined) this.modalSections[i].set(v[label]);
+      // if (v[label] !== undefined) 
+      this.modalSections[i].set(v[label]);
     });
   }
 
@@ -196,15 +200,15 @@ export default class Modals {
     timeline([
       { track: 'shade', from: 0, to: 1, ease: easing.linear },
       '-100',
-      this.tweenUp(elementStrings.modal, side),
-      '-200',
-      [
-        ...this.modalSections.map((s, i) =>
-          this.textTween(this.sectionLabels[i], 300, 50)
-        ),
-        50
-      ]
+      this.tweenUp(elementStrings.modal, side)
+      // [
+      //   ...this.modalSections.map((s, i) =>
+      //     this.textTween(this.sectionLabels[i], 300, 50)
+      //   ),
+      //   50
+      // ]
     ]).start(this.setStylers.bind(this));
+    console.log(this.setStylers);
   }
 
   //method for closing modal

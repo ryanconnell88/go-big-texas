@@ -48,7 +48,7 @@ button {
 .modal {
   opacity: 0;
   color: black;
-
+  overflow: hidden;
   /* background: none; */
   display: flex;
   flex-direction: column;
@@ -114,6 +114,7 @@ button {
   border-radius: 20px;
   width: 373px;
   height: auto;
+
 }
 
 #top-left-modal .modal-cancel {
@@ -130,7 +131,8 @@ button {
 #top-left-modal h1 {
   text-transform: uppercase;
   color:#d9242e; 
-  font-size: 20px; 
+  font-size: 100%; 
+  
   font-weight: bold;
   width: 100% !important; 
 }
