@@ -131,6 +131,7 @@
 
 
 /*********center modal************/
+
 #center-modal {
   background-color: white;
   background-position: center;
@@ -145,9 +146,12 @@
   transform-origin: 20% 5%;
   transition: all 1.5s;
   opacity: 0;
-  
+  box-sizing: border-box;
+  border: 19px solid #072D74;
+  border-radius: 0;
 
 }
+
 #center-modal.show  {
   transform: scale(1) ;
   transform: translate3d(0, 0px, 0) ;
@@ -164,11 +168,21 @@
 }
 
 #center-modal.show .modal-dialog {
-  transform: scale(1) ;
-  transform: translate3d(0, 0px, 0) ;
-  opacity: 1 ;
+  transform: scale(1);
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+    border: 8px solid #072D74;
+    width: 371px;
+    height: 302px;
+    /* margin: 0 0px 0 -30px; */
+    position: absolute;
+    top: -23px;
+    left: 7px;
 }
-
+#center-modal.show .modal-dialog h3,
+#center-modal.show .modal-dialog p{
+  text-align: center
+}
 #center-modal .close {
   top: -25px;
   left: 438px;
@@ -177,8 +191,6 @@
   
 }
 /********************************/
-
-
 
 .active-modal{
   display: flex !important;
