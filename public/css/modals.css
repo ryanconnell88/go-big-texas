@@ -15,54 +15,7 @@
  color: #333232;
 }
 
-
-/* modal id's */
-#left-modal {
-  /* background-image: url(../img/img5_2.png);
-  height: 510px;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: contain; */
-}
-
-#top-modal {
-  background-image: url('../img/img2_1.png');
-  height: 176px;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
-}
-#top-right-modal {
-  background-image: url(../img/img3_12.png);
-  height: 338px;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#right-modal {
-  background-image: url(../img/img6-fade2.png);
-  height: 512px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#bottom-modal {
-  background-image: url(../img/img7_2_2.png);
-  height: 512px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#far-left-modal {
-  background-image: url(../img/img4.png);
-  height: 512px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+/* modals */
 /***** top left ********/
 /* modal it self */
 #top-left-modal {
@@ -175,14 +128,51 @@
 }
 
 /**************************/
+/*********center modal************/
 #center-modal {
   background-color: white;
-  height: 512px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  padding: 41px 48px 0 38px;
+  border-radius: 20px;
+  position: absolute;
+  top: 36px;
+  left: 450px;
+  width: 398px;
+  height: 524px;
+  transform: scale(0.1);
+  transform-origin: 20% 5%;
+  transition: all 1.5s;
+  opacity: 0;
+  
+
+}
+#center-modal.show  {
+  transform: scale(1) ;
+  transform: translate3d(0, 0px, 0) ;
+  opacity: 1 ;
+}
+/* content in modal */
+#center-modal .modal-dialog {
+  transform: scale(0.1) ;
+  transform-origin: 20% 5% ;
+  transition: all 1.5s ;
+  opacity: 0 ;
 }
 
+#center-modal.show .modal-dialog {
+  transform: scale(1) ;
+  transform: translate3d(0, 0px, 0) ;
+  opacity: 1 ;
+}
+
+#center-modal .close {
+  top: 6px;
+  left: 410px;
+  position: absolute;
+  transition: all 1.5s;
+  
+}
+/********************************/
 .active-modal{
   display: flex !important;
 }
