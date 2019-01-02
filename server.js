@@ -11,6 +11,8 @@ let path = __dirname + '/public/';
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/img', express.static(__dirname + '/public/img'));
 app.use('/js', express.static(__dirname + '/public/js'));
+app.use('/node_modules', express.static(__dirname + '/node_modules'));
+
 
 // use index.html as "entry"
 app.get('/', function(req, res) {

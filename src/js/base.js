@@ -15,9 +15,6 @@ export const elements = {
   govStamp: document.getElementById('gov-stamp'),
   govSig: document.getElementById('gov-sig'),
   copyrights: document.getElementById('copyrights'),
-  modals: document.getElementById('modals'),
-  openModalButton: document.querySelector('.open-modal'),
-  cancelModalButton: document.querySelector('.modal-cancel')
 };
 
 //strings of class names and id's (and concatenation of ids)
@@ -34,10 +31,5 @@ export const elementStrings = {
   topRight: '#top-right-',
   topLeft: '#top-left-',
   farLeft: '#far-left-',
-  activeModal: 'open-modal active hover-modal',
-  cancel: 'modal-cancel',
-  modal: 'modal',
-  modalShade: 'modal-shade',
-  modalContainer: 'modal-container',
   section: 'section'
 };

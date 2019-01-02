@@ -14,9 +14,11 @@ body {
   position: fixed;
   top: 240px;
   left: 372px;
+  
 }
 
 #quote-header {
+  color: white !important;
   font-size: 145%;
   font-weight: 300;
   cursor: pointer;
