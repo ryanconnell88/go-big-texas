@@ -12,13 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "bootstrap": "^4.2.1",
     "express": "^4.16.4",
     "html-includes": "^4.0.0",
-    "popmotion": "^8.5.3",
-    "useragent": "^2.3.0",
-    "bootstrap": "^4.2.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.6"
+    "popmotion": "^8.5.3",
+    "popper.js": "^1.14.6",
+    "useragent": "^2.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",

@@ -137,10 +137,10 @@
   padding: 41px 48px 0 38px;
   border-radius: 20px;
   position: absolute;
-  top: 36px;
-  left: 450px;
-  width: 398px;
-  height: 524px;
+  top: 308px;
+  left: 607px;
+  width: 423px;
+  height: 350px;
   transform: scale(0.1);
   transform-origin: 20% 5%;
   transition: all 1.5s;
@@ -151,7 +151,9 @@
 #center-modal.show  {
   transform: scale(1) ;
   transform: translate3d(0, 0px, 0) ;
-  opacity: 1 ;
+  top: 168px;
+  left: 457px;
+  opacity: 1;
 }
 /* content in modal */
 #center-modal .modal-dialog {
@@ -168,8 +170,8 @@
 }
 
 #center-modal .close {
-  top: 6px;
-  left: 410px;
+  top: -25px;
+  left: 438px;
   position: absolute;
   transition: all 1.5s;
   
