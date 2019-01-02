@@ -2,9 +2,8 @@
 import '@babel/polyfill';
 
 // local packages
-import { elements, elementStrings } from './base';
+import { elements } from './base';
 import Animate from './Animate';
-import Modals from './Modals';
 
 //state for app
 let state = {};
