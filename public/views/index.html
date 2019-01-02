@@ -45,11 +45,11 @@
 <!-- folds of texas map -->
 <div class="inactive" id="texas-wrap">
   <img class="open-modal" data-side="#center-" id="center-fold" src="../img/unfold/slice_1_2.png" alt="center" />
-  <img class="open-modal" data-side="#left-" id="left-fold" src="../img/grow/slice_1_1-label4.png" />
+  <img class="open-modal" data-side="#left-" id="left-fold" src="../img/grow/slice_1_1-label4.png"  />
   <img class="open-modal" data-side="#right-" id="right-fold" src="../img/grow/slice_1_3-label4.png" />
   <img class="open-modal" data-side="#top-" id="top-fold" src="../img/unfold/slice_0_2.png" />
   <img class="open-modal" data-side="#top-right-" id="top-right-fold" src="../img/unfold/slice_0_3.png" />
-  <img class="open-modal" data-side="#top-left-" id="top-left-fold" src="../img/unfold/slice_0_1.png" />
+  <img class="open-modal" data-side="#top-left-" id="top-left-fold" src="../img/unfold/slice_0_1.png" data-toggle="modal" data-target="#top-left-modal"/>
   <img class="open-modal" data-side="#bottom-" id="bottom-fold" src="../img/unfold/slice_2_2.png" />
   <img class="open-modal" data-side="#far-left-" id="far-left-fold" src="../img/unfold/slice_1_0.png" />
 </div>
@@ -76,7 +76,26 @@
 
 
 <!-- top left modal -->
-
+<div class="modal fade" id="top-left-modal" tabindex="-1" role="dialog" aria-labelledby="top-left-modal-label"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- far left modal -->
 

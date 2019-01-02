@@ -15,6 +15,7 @@ export const elements = {
   govStamp: document.getElementById('gov-stamp'),
   govSig: document.getElementById('gov-sig'),
   copyrights: document.getElementById('copyrights'),
+  fade: document.querySelector('.fade')
 };
 
 //strings of class names and id's (and concatenation of ids)
@@ -31,5 +32,6 @@ export const elementStrings = {
   topRight: '#top-right-',
   topLeft: '#top-left-',
   farLeft: '#far-left-',
-  section: 'section'
+  section: 'section',
+  activeModal: 'active-modal'
 };

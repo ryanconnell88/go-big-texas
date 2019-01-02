@@ -310,11 +310,12 @@ export default class Animate {
         elements.farLeftFold.classList.add(elementStrings.hover);
         elements.topFold.classList.add(elementStrings.hover);
         elements.bottomFold.classList.add(elementStrings.hover);
+       // elements.fade.classList.add(elementStrings.activeModal)
         resolve();
       }, 10);
     });
   }
-
+  
   //method that merges all of the segments of the animation asynchronously
   async foldAnimation() {
     this.hideQuote();
