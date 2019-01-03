@@ -3,19 +3,30 @@
 }
 .modal .modal-content {
   border: none !important;
- 
 }
-.modal .close i{
-  transition: all .5s ;
+.modal .close i {
+  transition: all 0.5s;
   font-size: 18pt;
   text-shadow: none;
   color: #505050;
 }
 .modal .close i:hover {
- color: #333232;
+  color: #333232;
 }
 
 /* modals */
+/***********left modal ******/
+#left-modal .modal-dialog .modal-content {
+  background-image: url('img/img5_2.png');
+  background-size: 100% 160%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 560px;
+  height: 450px;
+}
+
+/***************************/
+
 /***** top left ********/
 /* modal it self */
 #top-left-modal {
@@ -32,26 +43,24 @@
   transform-origin: 20% 5%;
   transition: all 1.5s;
   opacity: 0;
-  
-
 }
-#top-left-modal.show  {
-  transform: scale(1) ;
-  transform: translate3d(0, 0px, 0) ;
-  opacity: 1 ;
+#top-left-modal.show {
+  transform: scale(1);
+  transform: translate3d(0, 0px, 0);
+  opacity: 1;
 }
 /* content in modal */
 #top-left-modal .modal-dialog {
-  transform: scale(0.1) ;
-  transform-origin: 20% 5% ;
-  transition: all 1.5s ;
-  opacity: 0 ;
+  transform: scale(0.1);
+  transform-origin: 20% 5%;
+  transition: all 1.5s;
+  opacity: 0;
 }
 
 #top-left-modal.show .modal-dialog {
-  transform: scale(1) ;
-  transform: translate3d(0, 0px, 0) ;
-  opacity: 1 ;
+  transform: scale(1);
+  transform: translate3d(0, 0px, 0);
+  opacity: 1;
 }
 
 #top-left-modal .close {
@@ -59,47 +68,46 @@
   left: 410px;
   position: absolute;
   transition: all 1.5s;
-  
 }
 #top-left-modal #gray-dots {
   width: 242px;
 }
 #top-left-modal table {
-  width: 100% !important; 
-  height:auto; 
+  width: 100% !important;
+  height: auto;
   margin-top: -7%;
 }
 #top-left-modal h1 {
   text-transform: uppercase;
-  color:#d9242e; 
-  font-size: 100%; 
-  
+  color: #d9242e;
+  font-size: 100%;
+
   font-weight: bold;
-  width: 100% !important; 
+  width: 100% !important;
 }
 
 #top-left-modal h2 {
-  color: black; 
-  text-transform: uppercase; 
+  color: black;
+  text-transform: uppercase;
   font-size: 16px;
-  width: 100% !important; 
+  width: 100% !important;
 }
 
 #top-left-modal h3 {
- text-transform: uppercase; 
- font-size: 14px;
- width: 100% !important; 
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 100% !important;
 }
 
 #top-left-modal .spanned {
-  font-weight: bold; 
-  color:#d9242e;
-  width: 100% !important; 
+  font-weight: bold;
+  color: #d9242e;
+  width: 100% !important;
 }
 
 #top-left-modal hr {
-  width: 100% !important; 
-  border-top: dotted 17px; 
+  width: 100% !important;
+  border-top: dotted 17px;
   margin-top: 0;
 }
 
@@ -109,16 +117,15 @@
   padding: 0 5px 0 0;
 }
 #red-stars {
-  width:100%; 
-  height:auto;
+  width: 100%;
+  height: auto;
 }
 #top-left-modal-image {
   animation: spinHorizontal 1.5s linear forwards;
   transform: rotateY(180deg);
 }
 
-@keyframes spinHorizontal
-{
+@keyframes spinHorizontal {
   0% {
     transform: rotateY(180deg);
   }
@@ -129,6 +136,108 @@
 
 /**************************/
 
+/*********top right modal***/
+#top-right-modal {
+  top: 100px;
+  left: 460px;
+  transform: scale(0.1);
+  transform-origin: 20% 5%;
+  transition: all 1.5s;
+  opacity: 0;
+}
+#top-right-modal.show {
+  top: 40px;
+  left: 42px;
+  transform: scale(1);
+  transform: translate3d(0, 0px, 0);
+  opacity: 1;
+}
+#top-right-modal .modal-dialog .modal-content {
+  background-image: url('../img/img3_12.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-radius: 0 0 10px 10px;
+  width: 410px;
+  height: 450px;
+  transform: scale(0.1);
+  transition: all 1.5s;
+  opacity: 0;
+}
+#top-right-modal.show .modal-dialog .modal-content {
+  transform: scale(1);
+  transform: translate3d(0, 0px, 0);
+  opacity: 1;
+}
+
+#top-right-modal .modal-dialog .modal-content #top-right-spinner img {
+  width: 300px;
+  position: absolute;
+  top: 19%;
+  left: 13%;
+  text-align: center;
+  animation: spinner 1.5s forwards;
+}
+
+#top-right-text {
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 52%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 6%;
+  z-index: 4;
+}
+#top-right-text div {
+  width: 100%;
+  margin-left: 3%;
+}
+#top-right-text div h3 {
+  font-size: 16px;
+  margin-top: 1%;
+}
+.top-right-info {
+  color: #d9242e;
+}
+
+.top-right-info h1 {
+  text-transform: uppercase;
+  color: #d9242e;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.red-bold {
+  color: #d9242e;
+  font-weight: bold;
+}
+#top-right-modal .close {
+  width: 100px;
+  position: absolute;
+  top: 36px;
+  left: 862px;
+  opacity: 0;
+  transition: all 1.5s;
+}
+#top-right-modal.show .close {
+  width: 100px;
+  position: absolute;
+
+  opacity: 1;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/**************************/
 
 /*********center modal************/
 
@@ -147,51 +256,49 @@
   transition: all 1.5s;
   opacity: 0;
   box-sizing: border-box;
-  border: 19px solid #072D74;
+  border: 19px solid #072d74;
   border-radius: 0;
-
 }
 
-#center-modal.show  {
-  transform: scale(1) ;
-  transform: translate3d(0, 0px, 0) ;
+#center-modal.show {
+  transform: scale(1);
+  transform: translate3d(0, 0px, 0);
   top: 168px;
   left: 457px;
   opacity: 1;
 }
 /* content in modal */
 #center-modal .modal-dialog {
-  transform: scale(0.1) ;
-  transform-origin: 20% 5% ;
-  transition: all 1.5s ;
-  opacity: 0 ;
+  transform: scale(0.1);
+  transform-origin: 20% 5%;
+  transition: all 1.5s;
+  opacity: 0;
 }
 
 #center-modal.show .modal-dialog {
   transform: scale(1);
-    transform: translate3d(0, 0px, 0);
-    opacity: 1;
-    border: 8px solid #072D74;
-    width: 371px;
-    height: 302px;
-    /* margin: 0 0px 0 -30px; */
-    position: absolute;
-    top: -23px;
-    left: 7px;
+  transform: translate3d(0, 0px, 0);
+  opacity: 1;
+  border: 8px solid #072d74;
+  width: 371px;
+  height: 302px;
+  /* margin: 0 0px 0 -30px; */
+  position: absolute;
+  top: -23px;
+  left: 7px;
 }
 #center-modal.show .modal-dialog h3,
-#center-modal.show .modal-dialog p{
-  text-align: center
+#center-modal.show .modal-dialog p {
+  text-align: center;
 }
 #center-modal .close {
   top: -25px;
   left: 438px;
   position: absolute;
   transition: all 1.5s;
-  
 }
 /********************************/
 
-.active-modal{
+.active-modal {
   display: flex !important;
 }
